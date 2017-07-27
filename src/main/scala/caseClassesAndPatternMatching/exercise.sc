@@ -9,3 +9,8 @@ val e3 = BinOp("/", e1, e2)
 def show(e: Expr) = println(f.format(e) + "\n\n")
 
 for (e <- Array(e1, e2, e3)) show(e)
+
+val m = Map("a" -> 1, "b" -> 2, "c" -> 3)
+m.get("a")
+m("b")
+m("d")

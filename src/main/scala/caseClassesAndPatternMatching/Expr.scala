@@ -26,4 +26,10 @@ object Expr {
     case BinOp(op, l, r) => BinOp(op, simplifyAll(l), simplifyAll(r))
     case _ => expr
   }
+ 
+  def describe(e: Expr): String = e match { 
+    case Number(_) => "a number" 
+    case Var(_) => "a variable" 
+  //  case _ => throw new RuntimeException // Should not happen 
+  }
 }
