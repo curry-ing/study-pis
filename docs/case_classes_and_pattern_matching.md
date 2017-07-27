@@ -107,7 +107,7 @@ expr match {
 ### Sequence patterns
 - match against sequence types (List, Array)
 - can limit the number of elements (e.g. `case List(0, _, _) => ???` => 3 length list)
-	- do not want specifying how long it can be, use `_*` at the last (e.g. `case List(0, _*) => ???`
+	- do not want specifying how long it can be, use `_*` at the last (e.g. `case List(0, _*) => ???`)
 
 ### Tuple patterns
 - can match against tuples
