@@ -160,7 +160,7 @@ object Predef {
 - common in libraries that provide syntax-like extensions to the language
 - should be ready to recognize the pattern 
 	- someone calling method that appears not to exist in the receiver class, probably implicit.
-	- when see class named `RichSomething`, it likely adding syntax-like method to type `Something` (e.g. `RichInt`, RichBoolean`)
+	- when see class named `RichSomething`, it likely adding syntax-like method to type `Something` (e.g. `RichInt`, `RichBoolean`)
 
 ## 21.5 Implicit parameters
 - we can call `someCall(a)(b, c, d)` as `someCall(a)` & `SomeClass(a)(b)` as `SomeClass(a)`
@@ -245,13 +245,25 @@ def maxList[T <% Ordered[T]](elements: List[T]): T = elements match {
 def printLength(seq: Seq[Int]) = println(seq.length)
 
 implicit def intToRange(i: Int) = 1 to i
-
 implicit def intToDigits(i: Int) = i.toString.toList.map(_.toInt)
 ```
 
 #### ~ scala v2.7
+- like this situation, complie error occurs(ambiguous implicits)
 
 #### scala v2.8 ~
+- If there's more specifit type the compiler takes it
+- specific means...
+  - The argument type of the former is a subtype of the latter's
+  - Both conversion are methods, and the enclosing class of the former extends the enclosing class of the latter
+
 ## 21.8 Debugging implicit 
+- Try to write the conversion out **explicitly**
+- **`-Xprint:typer`** option: helps to see what implicit conversions the compiler is inserting
+
 
 ## 21.9 Conclusion
+- powerful, code-condensing feature. 
+- but use carefully. it makes code confusing
+  - first, ask whether you can achieve a similar effect throu other means(inheritance, mixin composition, method overloading, etc)
+  - even though the code looks dirty, consider to use implicit 
