@@ -9,9 +9,11 @@ trait SimpleFoods {
 }
 
 trait SimpleRecipes {
+  this: SimpleFoods =>
+
   object FruitSalad extends Recipe(
     "fruit salad",
-    List(Apple, Pear),      // Error - Pear is not in scope
+    List(Apple, Pear),      // Now Pear is in scope
     "Mix it all together"
   )
 
