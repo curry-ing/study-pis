@@ -21,6 +21,10 @@ class Rational(n: Int, d: Int) {
       this.denominator * that.denominator)
   }
 
+  def plus(that: Int): Rational = {
+    new Rational(this.numerator + (this.denominator * that), this.denominator)
+  }
+
   def *(that: Rational): Rational = {
     new Rational(
       this.numerator * that.numerator,

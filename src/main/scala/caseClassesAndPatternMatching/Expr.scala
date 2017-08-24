@@ -26,10 +26,18 @@ object Expr {
     case BinOp(op, l, r) => BinOp(op, simplifyAll(l), simplifyAll(r))
     case _ => expr
   }
- 
-  def describe(e: Expr): String = e match { 
-    case Number(_) => "a number" 
-    case Var(_) => "a variable" 
-  //  case _ => throw new RuntimeException // Should not happen 
+
+  def describe(e: Expr): String = (e: @unchecked) match {
+    case Number(_) => "a number"
+    case Var(_) => "a variable"
+    //case _ => throw new RuntimeException // Should not happen
   }
+
+/*
+  def typeErasurechec(l: Any) = l match {
+    case listInts: Array[Int] => "Ints"
+    case listStrings: Array[String] => "Strs"
+    case _ => "others"
+  }
+*/
 }
