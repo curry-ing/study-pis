@@ -9,7 +9,7 @@ object GotApples2 {
         SimpleDatabase
 
     object browser extends Browser {
-      val database = db
+      val database: db.type = db
     }
 
     for (category <- db.allCategories)
