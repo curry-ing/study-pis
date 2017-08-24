@@ -9,7 +9,7 @@ object GotApples {
         SimpleDatabase
 
     object browser extends Browser {
-      val database = db
+      val database: db.type = db
     }
 
     val apple = SimpleDatabase.foodNamed("Apple").get
