@@ -22,6 +22,6 @@ trait SimpleRecipes {
 
 object SimpleDatabase extends Database with SimpleFoods with SimpleRecipes
 
-object simpleBrowser extends Browser{
+object SimpleBrowser extends Browser{
   val database = SimpleDatabase
 }
