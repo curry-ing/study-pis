@@ -12,6 +12,9 @@ object GotApples2 {
       val database = db
     }
 
+    for (category <- db.allCategories)
+      browser.displayCategory(category)
+
     val apple = SimpleDatabase.foodNamed("Apple").get
 
     for (recipe <- browser.recipesUsing(apple))
