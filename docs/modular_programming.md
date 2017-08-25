@@ -123,8 +123,9 @@ SimpleBrowser.recipesUsing(apple)
 
 #### Solution
 ##### Self type
-- an assumed type for `this` whenever `this` is mentioned within the class 
+- an assumed type for `this` whenever `this` is mentioned within the class  
 - **specifies the requirements on any concrete class the trait is mixed into**  
+- [Reference(?)](https://github.com/masunghoon/study_programming-scala/blob/master/docs/14_Scala%20Type%20Systems%2C%20Part%20I.md#146-자기-타입-표기)
 
 [Simple.scala](https://github.com/masunghoon/study-pis/blob/e545469eca7862d26dd9148e6174be7e3e3b263c/src/main/scala/modularProgramming/Simple.scala) ([diff](https://github.com/masunghoon/study-pis/commit/e545469eca7862d26dd9148e6174be7e3e3b263c))
 - `Pear` is avalable
