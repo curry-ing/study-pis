@@ -63,7 +63,7 @@ SimpleBrowser.recipesUsing(apple)
 ```
 
 ### Category
-[Simple.scala](http://www.vogella.com/tutorials/SpringDependencyInjection/article.html) - ([diff](https://github.com/masunghoon/study-pis/commit/14891ed7037a35a3b99a21ff785c7e59ff175b1d#diff-06f9d335be3278ec357abd822b156fc3))
+[Simple.scala](https://github.com/masunghoon/study-pis/blob/14891ed7037a35a3b99a21ff785c7e59ff175b1d/src/main/scala/modularProgramming/Simple.scala) - ([diff](https://github.com/masunghoon/study-pis/commit/14891ed7037a35a3b99a21ff785c7e59ff175b1d#diff-06f9d335be3278ec357abd822b156fc3))
 - **`private var categories`**
 	- items marked `private` are part of the implementation of a module
 	- particularly easy to change without affecting other modules
