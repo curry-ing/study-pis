@@ -90,7 +90,7 @@ SimpleBrowser.recipesUsing(apple)
 - defines some common methods: `allFoods`, `allRecipes` and `allCategories`
 - some methods can be defined (not abstract member): `foodNames`
 
-[Simple.scala](https://github.com/masunghoon/study-pis/blob/151e33236325e6a3507e67deb2baa70d0db13228/src/main/scala/modularProgramming/Simple.scala)
+[Simple.scala](https://github.com/masunghoon/study-pis/blob/151e33236325e6a3507e67deb2baa70d0db13228/src/main/scala/modularProgramming/Simple.scala) ([diff](https://github.com/masunghoon/study-pis/commit/151e33236325e6a3507e67deb2baa70d0db13228#diff-43afd56f43194631d1bd79643ca2f931))
 - `Simple` things extends their abstract classes
 - `SimpleBrowser` module
 	- instantiating the `Browser` class 
