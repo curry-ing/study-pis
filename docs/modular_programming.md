@@ -1,8 +1,8 @@
-# 29 Modular Programming
+# 29 Modular Programming Using Objects
 
 ### Programming in the large
 - organizing and assembling the smaller pieces 
-- package & access modifiers  ([chapter 13](..))
+- package & access modifiers  ([chapter 13](https://ridicorp.atlassian.net/wiki/spaces/DevSpace/pages/113803391/Scala+language+2))
 - use Scala's OOP feature to make program more modular
 	1. simple singleton object
 	1. traits and classes for abstraction
